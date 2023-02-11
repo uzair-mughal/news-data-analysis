@@ -1,13 +1,13 @@
 import os
 import pandas as pd
 from logger import Logger
-from scraper.news_scraper import NewsScraper
+from news_scraper import NewsScraper
 
 
 def main():
     
     countries = ['US', 'UK', 'FR', 'CA', 'DE', 'IE', 'NZ', 'AU']
-    dates = list(pd.date_range(start="2022-01-01", end="2022-07-31").astype('str'))
+    dates = list(pd.date_range(start="2020-01-01", end="2023-02-01").astype('str'))
     topics = ['Business News', 'Sports News', 'Entertainment', 'Worlds News', 'Nation News',
                 'Technology News', 'Entertainment News', 'Science News', 'Health News']
 
