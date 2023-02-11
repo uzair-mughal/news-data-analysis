@@ -40,7 +40,9 @@ class NewsScraper():
             article = newspaper.Article(url=url,languge='en')
             article.download()
             article.parse()
-            print(article.title)
+
+            # logger.info(msg=f'article title: {article.title}')
+
             return {
                 "title": str(article.title),
                 "text": str(article.text),
