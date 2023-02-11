@@ -129,3 +129,6 @@ dmypy.json
 
 # Proxy
 *proxies.txt
+
+# Data
+data/data*
